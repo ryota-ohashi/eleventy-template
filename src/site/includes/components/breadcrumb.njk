@@ -1,0 +1,26 @@
+<div class="l-breadcrumb">
+	<div class="breadcrumb">
+		<ol class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+				<a itemprop="item" href="/">
+					<span itemprop="name"></span>
+				</a>
+				<meta itemprop="position" content="1" />
+			</li>
+
+			{% for breadcrumb in breadcrumbs %}
+				<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+					{% if not loop.last -%}
+						<a itemprop="item" href="{{ breadcrumb.url }}">
+							<span itemprop="name">{{ breadcrumb.name }}</span>
+						</a>
+						<meta itemprop="position" content="{{ loop.index + 1 }}" />
+					{% else %}
+						<span itemprop="name">{{ breadcrumb.name }}</span>
+						<meta itemprop="position" content="{{ loop.index + 1 }}" />
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ol>
+	</div>
+</div>

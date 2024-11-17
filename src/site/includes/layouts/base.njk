@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+{% include '../components/meta.njk' %}
+{% include '../components/resource.njk' %}
+	{% include '../components/google-tag-manager.njk' %}
+
+{% block js %}{% endblock %}
+
+</head>
+<body data-page-category="{{ category }}">
+{% include '../components/google-tag-manager-no-script.njk' %}
+
+{% block content %}{% endblock %}
+{% block modal %}{% endblock %}
+</body>
+</html>

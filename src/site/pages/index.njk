@@ -1,0 +1,22 @@
+---
+title: タイトル
+description: 説明
+keywords: キーワード,キーワード,キーワード,キーワード,キーワード
+og_title: タイトル
+og_description: 説明
+url: https://example.com/
+---
+{% extends '../includes/layouts/base.njk' %}
+{% block js -%}
+	<!-- 個々のページ独自で読み込む場合 -->
+	<!-- <script defer src="/assets/js/other.js"></script> -->
+{%- endblock %}
+
+{% block content -%}
+{% include '../includes/components/header.njk' %}
+
+<p>トップページ</p>
+<p><a href="/about/">aboutページへいく</a></p>
+
+{% include '../includes/components/footer.njk' %}
+{%- endblock %}

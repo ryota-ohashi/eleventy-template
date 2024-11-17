@@ -1,0 +1,6 @@
+{%- if environment === 'production' -%}
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<script src="/assets/js/main.js"></script>
+{% else %}
+	<script src="/assets/js/main.js"></script>
+{%- endif -%}

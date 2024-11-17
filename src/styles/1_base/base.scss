@@ -1,0 +1,23 @@
+@use "../2_tools/mq" as *;
+
+:root {
+	--base-color: #fff;
+	--base-text-color: #222;
+	--gray-text-color: #555;
+	--placeholder-text-color: #727171;
+	--caution-color: #ee0101;
+	--gray-color: #f7f7f7;
+	--gray-border-color: #ccc;
+}
+
+
+body {
+	font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans","Helvetica Neue", Meiryo, sans-serif;
+	color: var(--base-text-color);
+	font-size: 14px;
+	line-height: 1.5;
+
+	@include mq(md) {
+		font-size: 16px;
+	}
+}

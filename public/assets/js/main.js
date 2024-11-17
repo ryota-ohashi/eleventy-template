@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=()=>{window.matchMedia("(min-width: 768px)").matches,document.body;console.log("hello")};document.addEventListener("DOMContentLoaded",(function(){const e=window.innerWidth-document.documentElement.clientWidth;document.documentElement.style.setProperty("--scrollbar-width",e+"px"),t()}))})();

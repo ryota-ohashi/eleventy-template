@@ -1,0 +1,31 @@
+@use "../2_tools/mq" as *;
+@use "../2_tools/hover" as *;
+
+.text-base{
+	em,
+	strong{
+		font-style: normal;
+		font-weight: 600;
+	}
+
+	sup {
+		top: -0.3em;
+	}
+
+	sub {
+		bottom: 0;
+	}
+}
+
+.text-small{
+	font-size: 14px;
+}
+
+.text-large{
+	@include mq($until: md) {
+		font-size: 16px;
+	}
+	@include mq(md) {
+		font-size: 18px;
+	}
+}

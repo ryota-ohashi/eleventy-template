@@ -1,0 +1,19 @@
+---
+title: タイトル
+description: 説明
+keywords: キーワード,キーワード,キーワード,キーワード,キーワード
+og_title: タイトル
+og_description: 説明
+url: https://example.com/
+breadcrumbs:
+  - name: 第二階層
+category: about
+---
+{% extends '../../includes/layouts/category.njk' %}
+
+{% block content -%}
+
+<p>aboutページ</p>
+<p><a href="/">トップページへいく</a></p>
+
+{%- endblock %}

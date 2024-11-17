@@ -1,0 +1,13 @@
+$breakpoints: (
+	xs: 320px,
+	sm: 375px,
+	md: 768px,
+	lg: 1000px,
+	xl: 1300px,
+);
+
+$breakpoints-shown: (xs, sm, md, lg, xl);
+
+@forward "../../../node_modules/sass-mq/mq" show mq with (
+	$breakpoints: $breakpoints
+);

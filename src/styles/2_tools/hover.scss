@@ -1,0 +1,18 @@
+@use "../2_tools/mq" as *;
+
+%hover {
+	transition: opacity 0.15s ease-out;
+	@media (hover: hover) {
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+}
+
+%hover-text {
+	&:hover {
+		@include mq(md) {
+			text-decoration: underline;
+		}
+	}
+}

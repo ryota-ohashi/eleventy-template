@@ -1,0 +1,10 @@
+@use "../2_tools/mq" as *;
+@use "../2_tools/hover" as *;
+
+body[page-category="about"]{
+	width: 100%;
+}
+
+.about{
+	width: 100%;
+}
